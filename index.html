@@ -7,25 +7,123 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="#">feature</a></li>
-                <li><a href="#">How It Work</a></li>
-                <li><a href="#">Privacy</a></li>
-            </ul>
-            <div>
-                <a href="#" class="login-btn">Log in</a>
-                <a href="#" class="btn">Download App</a>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to <br>teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>There are many variations of passages of lorem ipsum availabe, but the majority have suffered alteration in some form, by injection humor, or randomised words whics don't look even slightly believable</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
             </div>
-        </nav>
-        <div class="content">
-            <h1>Make <br>New Friends</h1>
-            <p>Socially is a new social media platform to make new friends online in the world. Now let's explore all it's amazing feature</p>
-            <a href="#" class="btn-hero">Join Now</a>
+
         </div>
-        <img src="pic.png" class="feature-img">
+    </section>
+    <nav id="slidenav">
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Courses</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menubtn">
+<!--about-->
+<section id="about">
+    <div class="about-left-col">
+        <img src="images/about.png">
     </div>
+    <div class="about-right-col">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <span class="square"></span>
+            <p>Contrary to popular belief, lorem ipsum dolor is amet not simple random text. It has roots in a piece of classical latim. Ricahr new York a alin in og warning attention and so come to the angine and more diffcult</p>
+            <br><br>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <h2>"Learning about Program We recommendeed form unitade states off amerika serikat"</h2>
+            <h3>---Abigail Adams</h3>
+        </div>
+    </div>
+</section>
+
+<!--feature-->
+<section id="feature">
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="images/pic-1.png">
+            <h4>Learn Anywhere</h4>
+            <p>Swict between your computer, tablet or mobile device</p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-2.png">
+            <h4>Expert Teacher</h4>
+            <p>Learn from industri experts who are passionate about teching</p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-3.png">
+            <h4>Unlimitid Access</h4>
+            <p>Choose what you'd like to learn from our extensive subscriptions library.</p>
+        </div>
+    </div>
+    <div class="feature-btn">
+        <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+        </div>
+        <button class="common-btn">Start Free Trial</button>
+    </div>
+</section>
+
+<!--courses-->
+<section id="courses">
+    <div class="container course-row">
+        <div class="course-left-col">
+            <div class="course-text">
+                <h1>Browse Our Top <br>Courses</h1>
+                     <span class="square"></span>
+                <p>Lerns contact information about aur courses in the amenim aderay and me onlyfans</p>
+                <button class="common-btn">View All Courses</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="course-right-col">
+            <img src="images/course.png">
+        </div>
+    </div>
+</section>
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var slidenav = document.getElementById("slidenav");
+        slidenav.style.right = "-250px";
+        menubtn.onclick = function(){
+            if(slidenav.style.right == "-250px"){
+                slidenav.style.right = "0px";
+            }
+            else{
+                slidenav.style.right = "-250px";
+            }
+        }
+    </script>
+    
 </body>
 </html>
