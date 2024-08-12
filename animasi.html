@@ -1,29 +1,75 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="animasi.css">
-</head>
+{{ 'animasi.css' | asset_url | stylesheet_tag }}
 
 <div class="wrapper">
-  <div class="itemLeft item1"></div>
-  <div class="itemLeft item2"></div>
-  <div class="itemLeft item3"></div>
-  <div class="itemLeft item4"></div>
-  <div class="itemLeft item5"></div>
-  <div class="itemLeft item6"></div>
-  <div class="itemLeft item7"></div>
-  <div class="itemLeft item8"></div>
+  <div class="itemLeft item1"><img src="{{ section.settings.image1 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item2"><img src="{{ section.settings.image2 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item3"><img src="{{ section.settings.image3 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item4"><img src="{{ section.settings.image4 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item5"><img src="{{ section.settings.image5 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item6"><img src="{{ section.settings.image6 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item7"><img src="{{ section.settings.image7 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemLeft item8"><img src="{{ section.settings.image8 | image_url: width: 200 | image_tag }}"></div>
 </div>
 <div class="wrapper">
-  <div class="itemRight item1"></div>
-  <div class="itemRight item2"></div>
-  <div class="itemRight item3"></div>
-  <div class="itemRight item4"></div>
-  <div class="itemRight item5"></div>
-  <div class="itemRight item6"></div>
-  <div class="itemRight item7"></div>
-  <div class="itemRight item8"></div>
+  <div class="itemRight item1"><img src="{{ section.settings.image1 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item2"><img src="{{ section.settings.image2 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item3"><img src="{{ section.settings.image3 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item4"><img src="{{ section.settings.image4 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item5"><img src="{{ section.settings.image5 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item6"><img src="{{ section.settings.image6 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item7"><img src="{{ section.settings.image7 | image_url: width: 200 | image_tag }}"></div>
+  <div class="itemRight item8"><img src="{{ section.settings.image8 | image_url: width: 200 | image_tag }}"></div>
 </div>
+
+{% schema %}
+  {
+    "name": "belajar",
+    "settings": [
+        {
+           "type": "image_picker",
+           "id": "image1",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image2",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image3",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image4",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image5",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image6",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image7",
+           "label": "Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "image8",
+           "label": "Image"
+         }
+    ],
+    "presets": [
+      {
+        "name": "belajar"
+      }
+    ]
+  }
+{% endschema %}
