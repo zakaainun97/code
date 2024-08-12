@@ -59,43 +59,63 @@ img {
 }
 
 .itemLeft {
-  left: max(calc(200px * 8), 100%);
+  left: max(calc(200px * 6), 100%);
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(200px * 8), calc(100% + 200px));
+  right: max(calc(200px * 6), calc(100% + 200px));
   animation-name: scrollRight;
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
 
-.item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
+@media only screen and (max-width: 480px) {
+  img {
+  width: 100px;
+  height: 50px;
+  }
+  
+  .wrapper {
+  margin: 0;
+  height: 50px;
+  }
+  
+  .itemLeft,
+  .itemRight {
+  width: 100px;
+  height: 50px;
+  }
+  
+  .itemLeft {
+  left: max(calc(100px * 6), 100%);
+  animation-name: scrollLeft;
+  }
 
-.item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  .itemRight {
+  right: max(calc(100px * 6), calc(100% + 100px));
+  animation-name: scrollRight;
+  }
 }
